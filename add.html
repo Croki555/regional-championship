@@ -1,0 +1,194 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Страница добавления информации о найденном животном</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/add.css">
+</head>
+<body>
+<header class="header d-flex f-column f-content-center pt-30 pb-60 gap-30" id="main">
+    <div class="container d-flex f-content-between f-wrap align-items-center w-100 gap-30">
+        <div class="logo">
+            <a href="#" class="d-block w-100 h-100">
+                <img src="img/logo.png" alt="Логотип GETPETBACK">
+            </a>
+        </div>
+        <nav>
+            <ul class="d-flex f-wrap gap-30">
+                <li class="list__item">
+                    <a href="search.html">Поиск</a>
+                </li>
+                <li class="list__item">
+                    <a href="register.html">Регистрация</a>
+                </li>
+                <li class="list__item">
+                    <a href="login.html">Авторизация</a>
+                </li>
+                <li class="list__item">
+                    <a href="profile.html">Личный кабинет</a>
+                </li>
+                <li class="list__item">
+                    <a href="orders-management.html">ЛК модератора</a>
+                </li>
+                <li class="list__item">
+                    <a href="add.html">Добавить</a>
+                </li>
+                <li class="list__item">
+                    <a href="index.html#reviews">Отзывы</a>
+                </li>
+            </ul>
+        </nav>
+        <h1 class="header__title text-align-center w-100 color-red">Информация актуальна, для жителей
+            Санкт-Петербурга!</h1>
+    </div>
+    <div class="container header-center d-flex align-items-center f-content-between w-100 gap-10">
+        <div class="arrow-block d-flex align-items-center p-10">
+            <button class="arrow-left btn-arrow btn__desktop"></button>
+        </div>
+
+        <div class="info f-column d-flex f-wrap gap-30">
+            <p class="text p-10 b-r-5">Найдена рыжая лиса возле магазина Пятерочка в Петроградском районе на улице
+                Ординарная.
+                За более подробной информацией обращайтесь по телефону +79020002233.
+                <button class="info__btn btn">Подробнее</button>
+            </p>
+            <div class="info__btns d-none gap-30 f-content-center">
+                <button class="arrow-left btn-arrow"></button>
+                <button class="arrow-right btn-arrow"></button>
+            </div>
+        </div>
+
+        <div class="arrow-block d-flex align-items-center p-10 btn__desktop">
+            <button class="arrow-right btn-arrow"></button>
+        </div>
+    </div>
+    <button class="arrow-bottom btn-arrow"></button>
+</header>
+<section>
+    <div class="container ">
+        <h2 class="mb-10">
+            Добавление информации о найденном животном
+        </h2>
+        <form action="#" class="add__form d-flex f-column gap-30">
+            <input type="tel" name="phone" placeholder="Контактный телефон" class="input text">
+            <input type="email" name="email" placeholder="E-mail" class="input text">
+            <div class="d-flex f-column gap-30">
+                <div>
+                    <label for="agree" class="mr-10">Автоматическая регистрация</label>
+                    <input type="checkbox" name="agree" class="agree-auto-regist">
+                    <div class="d-flex align-items-center auto-regist mt-10 d-none">
+                        <div class="d-flex align-items-center">
+                            <input type="password" placeholder="Пароль" class="input mr-10">
+                            <input type="checkbox" name="agree-pass" class="p-10 mr-10" id="agree-pass">
+                            <label for="agree-pass" class="mr-10">Подтвердить пароль</label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="d-flex align-items-center f-wrap gap-20">
+                <h3>Выберите вид животного</h3>
+                <select name="view-animal" class="select">
+                    <option value="Кошка">Кошка</option>
+                    <option value="Собака">Собака</option>
+                    <option value="Суслик">Суслик</option>
+                    <option value="Хорек">Хорек</option>
+                </select>
+            </div>
+
+            <div class="d-flex f-column gap-20">
+                <h3>Добавьте фотографии животного</h3>
+                <div>
+                    <span>Фотография 1:</span>
+                    <input type="file" name="img1">
+                </div>
+                <div>
+                    <span>Фотография 2:</span>
+                    <input type="file" name="img2">
+                </div>
+                <div>
+                    <span>Фотография 3:</span>
+                    <input type="file" name="img3">
+                </div>
+            </div>
+
+            <div class="d-flex f-column gap-20">
+                <h3>Описание животного и пр.</h3>
+                <textarea class="text input" name="text-descr" cols="30" rows="10"></textarea>
+            </div>
+
+            <div class="d-flex f-column gap-20">
+                <h3>Клеймо животного, если присутствует</h3>
+                <input class="text input" type="text" name="kleymo" placeholder="Введите клеймо питомца">
+            </div>
+
+            <div class="d-flex align-items-center f-wrap gap-20">
+                <h3>Выберите район:</h3>
+                <select name="district" class="select">
+                    <option value="Василесотровский">Василесотровский</option>
+                    <option value="Петроградский">Петроградский</option>
+                    <option value="Кировский">Кировский</option>
+                </select>
+            </div>
+
+            <div class="d-flex align-items-center f-wrap gap-20">
+                <h3>Дата, когда было найдено животное:</h3>
+                <input type="date" name="date" class="input">
+            </div>
+
+            <div class="d-flex align-items-center gap-10">
+                <input type="checkbox" name="agree" class="p-10" required id="agree">
+                <label for="agree">Подтверждение согласия на обработку персональных данных</label>
+            </div>
+            <button type="submit" class="add__btn btn">Добавить</button>
+        </form>
+    </div>
+</section>
+<footer class="footer pt-60 pb-60 text-align-center w-100">
+    <div class="arrow-block">
+        <button class="arrow-top btn-arrow"><a href="#main"></a></button>
+    </div>
+    <div class="container d-flex f-column gap-30">
+        <ul class="d-flex f-wrap gap-20 f-content-center">
+            <li class="list__item p-10">
+                <span class="mr-10">Телефон:</span><a href="tel:+78001234567" class="color-grey-white">8
+                (800)123-45-67</a>
+            </li>
+            <li class="list__item p-10">
+                <span class="mr-10">E-mail:</span><a href="mailto:mail@getpetback.ru" class="color-grey-white">mail@getpetback.ru</a>
+            </li>
+            <li class="list__item p-10">
+                Адрес:<span class="ml-10 color-grey-white">г.Санкт-Петербург, ул. Шувалова, офис 3</span>
+            </li>
+        </ul>
+        <hr>
+        <nav>
+            <ul class="d-flex f-wrap f-content-center gap-30">
+                <li class="list__item p-10">
+                    <a class="color-grey-white" href="index.html">Главная</a>
+                </li>
+                <li class="list__item p-10">
+                    <a class="color-grey-white" href="register.html">Регистрация</a>
+                </li>
+                <li class="list__item p-10">
+                    <a class="color-grey-white" href="login.html">Авторизация</a>
+                </li>
+                <li class="list__item p-10">
+                    <a class="color-grey-white" href="profile.html">Личный кабинет</a>
+                </li>
+                <li class="list__item p-10">
+                    <a class="color-grey-white" href="pet.html">Найдено животное</a>
+                </li>
+                <li class="list__item p-10">
+                    <a class="color-grey-white" href="search.html">Поиск</a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+</footer>
+</body>
+</html>

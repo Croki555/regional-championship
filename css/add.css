@@ -1,0 +1,19 @@
+.header {
+    min-height: unset;
+    background-image:none;
+}
+
+.arrow-bottom,
+.header__title,
+.header-center {
+    display: none;
+}
+
+
+.add__form {
+    max-width: 550px;
+}
+
+.agree-auto-regist:checked  + .auto-regist {
+    display: flex;
+}

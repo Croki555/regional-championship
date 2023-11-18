@@ -1,0 +1,300 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Страница личного кабинета</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/profile.css">
+</head>
+<body>
+<header class="header d-flex f-column f-content-center pt-30 pb-60 gap-30" id="main">
+    <div class="container d-flex f-content-between f-wrap align-items-center w-100 gap-30">
+        <div class="logo">
+            <a href="#" class="d-block w-100 h-100">
+                <img src="img/logo.png" alt="Логотип GETPETBACK">
+            </a>
+        </div>
+        <nav>
+            <ul class="d-flex f-wrap gap-30">
+                <li class="list__item">
+                    <a href="search.html">Поиск</a>
+                </li>
+                <li class="list__item">
+                    <a href="register.html">Регистрация</a>
+                </li>
+                <li class="list__item">
+                    <a href="login.html">Авторизация</a>
+                </li>
+                <li class="list__item">
+                    <a href="profile.html">Личный кабинет</a>
+                </li>
+                <li class="list__item">
+                    <a href="orders-management.html">ЛК модератора</a>
+                </li>
+                <li class="list__item">
+                    <a href="add.html">Добавить</a>
+                </li>
+                <li class="list__item">
+                    <a href="index.html#reviews">Отзывы</a>
+                </li>
+            </ul>
+        </nav>
+        <h1 class="header__title text-align-center w-100 color-red">Информация актуальна, для жителей
+            Санкт-Петербурга!</h1>
+    </div>
+    <div class="container header-center d-flex align-items-center f-content-between w-100 gap-10">
+        <div class="arrow-block d-flex align-items-center p-10">
+            <button class="arrow-left btn-arrow btn__desktop"></button>
+        </div>
+
+        <div class="info f-column d-flex f-wrap gap-30">
+            <p class="text p-10 b-r-5">Найдена рыжая лиса возле магазина Пятерочка в Петроградском районе на улице
+                Ординарная.
+                За более подробной информацией обращайтесь по телефону +79020002233.
+                <button class="info__btn btn">Подробнее</button>
+            </p>
+            <div class="info__btns d-none gap-30 f-content-center">
+                <button class="arrow-left btn-arrow"></button>
+                <button class="arrow-right btn-arrow"></button>
+            </div>
+        </div>
+
+        <div class="arrow-block d-flex align-items-center p-10 btn__desktop">
+            <button class="arrow-right btn-arrow"></button>
+        </div>
+    </div>
+    <button class="arrow-bottom btn-arrow"></button>
+</header>
+<div class="container pt-60 pb-60">
+    <form action="#" class="profile__form d-flex f-column f-wrap gap-20 pb-60">
+        <h2>Личный кабинет</h2>
+        <div class="profile__form-firstName d-flex f-wrap">
+            <input type="text" name="firstName" value="Павел" class="input">
+            <button class="btn">Изменить</button>
+        </div>
+        <div class="profile__form-lastName d-flex f-wrap">
+            <input type="text" name="lastName" value="Соколов" class="input">
+            <button class="btn">Изменить</button>
+        </div>
+        <div class="profile__form-phone d-flex f-wrap">
+            <input type="tel" name="phone" value="+79214034901" class="input">
+            <button class="btn">Изменить</button>
+        </div>
+        <div class="profile__form-email d-flex f-wrap">
+            <input type="email" name="phone" value="example@mail.ru" class="input">
+            <button class="btn">Изменить</button>
+        </div>
+        <span class="profile__count-ads d-block">Количество добавленных объявлений: <b>12</b></span>
+        <span class="profile__count-animals d-block">Количество животных, которые вернулись к хозяевам: <b>2</b></span>
+        <span class="profile__date-regist d-block">Дата регистрации: <b>20.03.2023</b></span>
+        <span class="profile__count-animals d-block">Количество дней, прошедших с момента регистрации на сайте: <b>5</b></span>
+    </form>
+    <h2 class="mb-10 text-align-center">Информация по объявлениям</h2>
+    <h3 class="mb-30 color-grey">На модерации</h3>
+    <ul class="ads__list gap-30 pb-60 d-grid">
+        <li class="moder__item b-r-5 d-flex f-column p-10 gap-30">
+            <div class="moder__img ads__imgs"></div>
+            <p class="text"><b>Пользователь: </b><a href="#">Павел</a></p>
+            <p class="active__descr ads__descr text">
+                <b>Описание:</b> оранжевый кот с ошейником
+            </p>
+            <p class="text"><b>Район:</b>Василеостровский</p>
+            <span class="text"><b>Объявление добавлено:</b>20.03.2023</span>
+        </li>
+        <li class="moder__item b-r-5 d-flex f-column p-10 gap-30">
+            <div class="moder__img ads__imgs"></div>
+            <p class="text"><b>Пользователь: </b><a href="#">Павел</a></p>
+            <p class="active__descr ads__descr text">
+                <b>Описание:</b> оранжевый кот с ошейником
+            </p>
+            <p class="text"><b>Район:</b>Василеостровский</p>
+            <span class="text"><b>Объявление добавлено:</b>20.03.2023</span>
+        </li>
+        <li class="moder__item b-r-5 d-flex f-column p-10 gap-30">
+            <div class="moder__img ads__imgs"></div>
+            <p class="text"><b>Пользователь: </b><a href="#">Павел</a></p>
+            <p class="active__descr ads__descr text">
+                <b>Описание:</b> оранжевый кот с ошейником
+            </p>
+            <p class="text"><b>Район:</b>Василеостровский</p>
+            <span class="text"><b>Объявление добавлено:</b>20.03.2023</span>
+        </li>
+        <li class="moder__item b-r-5 d-flex f-column p-10 gap-30">
+            <div class="moder__img ads__imgs"></div>
+            <p class="text"><b>Пользователь: </b><a href="#">Павел</a></p>
+            <p class="active__descr ads__descr text">
+                <b>Описание:</b> оранжевый кот с ошейником
+            </p>
+            <p class="text"><b>Район:</b>Василеостровский</p>
+            <span class="text"><b>Объявление добавлено:</b>20.03.2023</span>
+        </li>
+        <li class="moder__item b-r-5 d-flex f-column p-10 gap-30">
+            <div class="moder__img ads__imgs"></div>
+            <p class="text"><b>Пользователь: </b><a href="#">Павел</a></p>
+            <p class="active__descr ads__descr text">
+                <b>Описание:</b> оранжевый кот с ошейником
+            </p>
+            <p class="text"><b>Район:</b>Василеостровский</p>
+            <span class="text"><b>Объявление добавлено:</b>20.03.2023</span>
+        </li>
+    </ul>
+
+    <h3 class="mb-30 color-grey">Активно</h3>
+    <ul class="ads__list gap-30 pb-60 d-grid">
+        <li class="active__item b-r-5 d-flex f-column p-10 gap-30">
+            <div class="active__img ads__imgs"></div>
+            <p class="text"><b>Пользователь: </b><a href="#">Павел</a></p>
+            <p class="active__descr ads__descr text">
+                <b>Описание:</b> оранжевый кот с ошейником
+            </p>
+            <p class="text"><b>Район:</b>Василеостровский</p>
+            <span class="text"><b>Объявление добавлено:</b>20.03.2023</span>
+        </li>
+        <li class="active__item b-r-5 d-flex f-column p-10 gap-30">
+            <div class="active__img ads__imgs"></div>
+            <p class="text"><b>Пользователь: </b><a href="#">Павел</a></p>
+            <p class="active__descr ads__descr text">
+                <b>Описание:</b> оранжевый кот с ошейником
+            </p>
+            <p class="text"><b>Район:</b>Василеостровский</p>
+            <span class="text"><b>Объявление добавлено:</b>20.03.2023</span>
+        </li>
+        <li class="active__item b-r-5 d-flex f-column p-10 gap-30">
+            <div class="active__img ads__imgs"></div>
+            <p class="text"><b>Пользователь: </b><a href="#">Павел</a></p>
+            <p class="active__descr ads__descr text">
+                <b>Описание:</b> оранжевый кот с ошейником
+            </p>
+            <p class="text"><b>Район:</b>Василеостровский</p>
+            <span class="text"><b>Объявление добавлено:</b>20.03.2023</span>
+        </li>
+    </ul>
+
+    <h3 class="mb-30 color-grey">Найдено</h3>
+    <ul class="ads__list gap-30 pb-60 d-grid">
+        <li class="found__item b-r-5 d-flex f-column p-10 gap-30">
+            <div class="found__img ads__imgs"></div>
+            <p class="text"><b>Пользователь: </b><a href="#">Павел</a></p>
+            <p class="found__descr ads__descr text">
+                <b>Описание:</b> оранжевый кот с ошейником
+            </p>
+            <p class="text"><b>Район:</b>Василеостровский</p>
+            <span class="text"><b>Объявление добавлено:</b>20.03.2023</span>
+        </li>
+        <li class="found__item b-r-5 d-flex f-column p-10 gap-30">
+            <div class="found__img ads__imgs"></div>
+            <p class="text"><b>Пользователь: </b><a href="#">Павел</a></p>
+            <p class="found__descr ads__descr text">
+                <b>Описание:</b> оранжевый кот с ошейником
+            </p>
+            <p class="text"><b>Район:</b>Василеостровский</p>
+            <span class="text"><b>Объявление добавлено:</b>20.03.2023</span>
+        </li>
+        <li class="found__item b-r-5 d-flex f-column p-10 gap-30">
+            <div class="found__img ads__imgs"></div>
+            <p class="text"><b>Пользователь: </b><a href="#">Павел</a></p>
+            <p class="found__descr ads__descr text">
+                <b>Описание:</b> оранжевый кот с ошейником
+            </p>
+            <p class="text"><b>Район:</b>Василеостровский</p>
+            <span class="text"><b>Объявление добавлено:</b>20.03.2023</span>
+        </li>
+        <li class="found__item b-r-5 d-flex f-column p-10 gap-30">
+            <div class="found__img ads__imgs"></div>
+            <p class="text"><b>Пользователь: </b><a href="#">Павел</a></p>
+            <p class="found__descr ads__descr text">
+                <b>Описание:</b> оранжевый кот с ошейником
+            </p>
+            <p class="text"><b>Район:</b>Василеостровский</p>
+            <span class="text"><b>Объявление добавлено:</b>20.03.2023</span>
+        </li>
+        <li class="found__item b-r-5 d-flex f-column p-10 gap-30">
+            <div class="found__img ads__imgs"></div>
+            <p class="text"><b>Пользователь: </b><a href="#">Павел</a></p>
+            <p class="found__descr ads__descr text">
+                <b>Описание:</b> оранжевый кот с ошейником
+            </p>
+            <p class="text"><b>Район:</b>Василеостровский</p>
+            <span class="text"><b>Объявление добавлено:</b>20.03.2023</span>
+        </li>
+    </ul>
+
+    <h3 class="mb-30 color-grey">В архиве</h3>
+    <ul class="ads__list gap-30 pb-60 d-grid">
+        <li class="archive__item b-r-5 d-flex f-column p-10 gap-30">
+            <div class="archive__img ads__imgs"></div>
+            <p class="text"><b>Пользователь: </b><a href="#">Павел</a></p>
+            <p class="archive__descr ads__descr text">
+                <b>Описание:</b> оранжевый кот с ошейником
+            </p>
+            <p class="text"><b>Район:</b>Василеостровский</p>
+            <span class="text"><b>Объявление добавлено:</b>20.03.2023</span>
+        </li>
+        <li class="archive__item b-r-5 d-flex f-column p-10 gap-30">
+            <div class="archive__img ads__imgs"></div>
+            <p class="text"><b>Пользователь: </b><a href="#">Павел</a></p>
+            <p class="archive__descr ads__descr text">
+                <b>Описание:</b> оранжевый кот с ошейником
+            </p>
+            <p class="text"><b>Район:</b>Василеостровский</p>
+            <span class="text"><b>Объявление добавлено:</b>20.03.2023</span>
+        </li>
+        <li class="archive__item b-r-5 d-flex f-column p-10 gap-30">
+            <div class="archive__img ads__imgs"></div>
+            <p class="text"><b>Пользователь: </b><a href="#">Павел</a></p>
+            <p class="archive__descr ads__descr text">
+                <b>Описание:</b> оранжевый кот с ошейником
+            </p>
+            <p class="text"><b>Район:</b>Василеостровский</p>
+            <span class="text"><b>Объявление добавлено:</b>20.03.2023</span>
+        </li>
+    </ul>
+</div>
+
+<footer class="footer pt-60 pb-60 text-align-center w-100">
+    <div class="arrow-block">
+        <button class="arrow-top btn-arrow"><a href="#main"></a></button>
+    </div>
+    <div class="container d-flex f-column gap-30">
+        <ul class="d-flex f-wrap gap-20 f-content-center">
+            <li class="list__item p-10">
+                <span class="mr-10">Телефон:</span><a href="tel:+78001234567" class="color-grey-white">8
+                (800)123-45-67</a>
+            </li>
+            <li class="list__item p-10">
+                <span class="mr-10">E-mail:</span><a href="mailto:mail@getpetback.ru" class="color-grey-white">mail@getpetback.ru</a>
+            </li>
+            <li class="list__item p-10">
+                Адрес:<span class="ml-10 color-grey-white">г.Санкт-Петербург, ул. Шувалова, офис 3</span>
+            </li>
+        </ul>
+        <hr>
+        <nav>
+            <ul class="d-flex f-wrap f-content-center gap-30">
+                <li class="list__item p-10">
+                    <a class="color-grey-white" href="index.html">Главная</a>
+                </li>
+                <li class="list__item p-10">
+                    <a class="color-grey-white" href="register.html">Регистрация</a>
+                </li>
+                <li class="list__item p-10">
+                    <a class="color-grey-white" href="login.html">Авторизация</a>
+                </li>
+                <li class="list__item p-10">
+                    <a class="color-grey-white" href="profile.html">Личный кабинет</a>
+                </li>
+                <li class="list__item p-10">
+                    <a class="color-grey-white" href="pet.html">Найдено животное</a>
+                </li>
+                <li class="list__item p-10">
+                    <a class="color-grey-white" href="search.html">Поиск</a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+</footer>
+</body>
+</html>

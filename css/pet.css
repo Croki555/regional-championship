@@ -1,0 +1,63 @@
+.header {
+    min-height: unset;
+    background-image:none;
+}
+
+.arrow-bottom,
+.header__title,
+.header-center {
+    display: none;
+}
+
+
+.pet__imgs img {
+    max-width: 250px;
+    min-width: 100px;
+}
+
+@media (max-width: 550px) {
+    .section-card-animal {
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+
+    .pet__imgs {
+        flex-wrap: wrap;
+    }
+
+    .pet__imgs img {
+        height: 200px;
+        max-width: 100%;
+    }
+}
+
+@media print {
+    body {
+        position: relative;
+    }
+
+    .section-card-animal {
+        padding: 0;
+        position: absolute;
+        top: 50%;
+        transform: translateY(50%);
+    }
+
+    .header,
+    .card-animal__title,
+    .footer {
+        display: none;
+    }
+
+    .card-animal__title + div {
+        flex-direction: row;
+    }
+
+    .pet__imgs img:not(:first-child) {
+        display: none;
+    }
+
+    .pet__imgs img {
+        max-width: 550px;
+    }
+}

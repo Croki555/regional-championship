@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Регистрация</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/register.css">
+</head>
+<body>
+<header class="header d-flex f-column f-content-center pt-30 pb-60 gap-30" id="main">
+    <div class="container d-flex f-content-between f-wrap align-items-center w-100 gap-30">
+        <div class="logo">
+            <a href="#" class="d-block w-100 h-100">
+                <img src="img/logo.png" alt="Логотип GETPETBACK">
+            </a>
+        </div>
+        <nav>
+            <ul class="d-flex f-wrap gap-30">
+                <li class="list__item">
+                    <a href="search.html">Поиск</a>
+                </li>
+                <li class="list__item">
+                    <a href="register.html">Регистрация</a>
+                </li>
+                <li class="list__item">
+                    <a href="login.html">Авторизация</a>
+                </li>
+                <li class="list__item">
+                    <a href="profile.html">Личный кабинет</a>
+                </li>
+                <li class="list__item">
+                    <a href="orders-management.html">ЛК модератора</a>
+                </li>
+                <li class="list__item">
+                    <a href="add.html">Добавить</a>
+                </li>
+                <li class="list__item">
+                    <a href="index.html#reviews">Отзывы</a>
+                </li>
+            </ul>
+        </nav>
+        <h1 class="header__title text-align-center w-100 color-red">Информация актуальна, для жителей
+            Санкт-Петербурга!</h1>
+    </div>
+    <div class="container header-center d-flex align-items-center f-content-between w-100 gap-10">
+        <div class="arrow-block d-flex align-items-center p-10">
+            <button class="arrow-left btn-arrow btn__desktop"></button>
+        </div>
+
+        <div class="info f-column d-flex f-wrap gap-30">
+            <p class="text p-10 b-r-5">Найдена рыжая лиса возле магазина Пятерочка в Петроградском районе на улице
+                Ординарная.
+                За более подробной информацией обращайтесь по телефону +79020002233.
+                <button class="info__btn btn">Подробнее</button>
+            </p>
+            <div class="info__btns d-none gap-30 f-content-center">
+                <button class="arrow-left btn-arrow"></button>
+                <button class="arrow-right btn-arrow"></button>
+            </div>
+        </div>
+
+        <div class="arrow-block d-flex align-items-center p-10 btn__desktop">
+            <button class="arrow-right btn-arrow"></button>
+        </div>
+    </div>
+    <button class="arrow-bottom btn-arrow"></button>
+</header>
+<section class="pb-60">
+    <div class="container">
+        <form action="#" class="register__form d-flex f-column gap-20 b-r-5">
+            <h2 class="register__title">Регистрация</h2>
+            <input type="email" id="email" class="register__form-input input" placeholder="E-mail*">
+            <input type="text" class="register__form-input input" placeholder="Имя">
+            <input type="text" class="register__form-input input" placeholder="Фамилия">
+            <input type="tel" class="register__form-input input" placeholder="Телефон">
+            <input type="password" class="register__form-input input" placeholder="Пароль*" id="password">
+            <input type="password" class="register__form-input input" placeholder="Повторите пароль*">
+            <p>
+                <input type="checkbox" id="agree" required>
+                <label for="agree">Подтверждение согласия на обработку персональных данных</label>
+            </p>
+            <button type="submit" class="form__btn-register btn">Зарегистрироваться</button>
+        </form>
+    </div>
+</section>
+
+<footer class="footer pt-60 pb-60 text-align-center w-100">
+    <div class="arrow-block">
+        <button class="arrow-top btn-arrow"><a href="#main"></a></button>
+    </div>
+    <div class="container d-flex f-column gap-30">
+        <ul class="d-flex f-wrap gap-20 f-content-center">
+            <li class="list__item p-10">
+                <span class="mr-10">Телефон:</span><a href="tel:+78001234567" class="color-grey-white">8
+                (800)123-45-67</a>
+            </li>
+            <li class="list__item p-10">
+                <span class="mr-10">E-mail:</span><a href="mailto:mail@getpetback.ru" class="color-grey-white">mail@getpetback.ru</a>
+            </li>
+            <li class="list__item p-10">
+                Адрес:<span class="ml-10 color-grey-white">г.Санкт-Петербург, ул. Шувалова, офис 3</span>
+            </li>
+        </ul>
+        <hr>
+        <nav>
+            <ul class="d-flex f-wrap f-content-center gap-30">
+                <li class="list__item p-10">
+                    <a class="color-grey-white" href="index.html">Главная</a>
+                </li>
+                <li class="list__item p-10">
+                    <a class="color-grey-white" href="register.html">Регистрация</a>
+                </li>
+                <li class="list__item p-10">
+                    <a class="color-grey-white" href="login.html">Авторизация</a>
+                </li>
+                <li class="list__item p-10">
+                    <a class="color-grey-white" href="profile.html">Личный кабинет</a>
+                </li>
+                <li class="list__item p-10">
+                    <a class="color-grey-white" href="pet.html">Найдено животное</a>
+                </li>
+                <li class="list__item p-10">
+                    <a class="color-grey-white" href="search.html">Поиск</a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+</footer>
+</body>
+</html>

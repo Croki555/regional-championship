@@ -1,0 +1,25 @@
+.header {
+    min-height: unset;
+    background-image:none;
+}
+
+.arrow-bottom,
+.header__title,
+.header-center {
+    display: none;
+}
+
+.footer .arrow-block {
+    display: none;
+}
+
+.register__form {
+    max-width: max-content;
+    margin: 0 auto;
+    min-width: 300px;
+    padding: 20px;
+}
+
+.register__form .bg-red::placeholder {
+    color: var(--white);
+}
